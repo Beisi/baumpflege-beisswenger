@@ -1,0 +1,95 @@
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>David Beißwenger - Baumpflege</title>
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav" id="nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div id="menuspacer"></div>
+
+    <div id="home">
+      <div id="logo">
+        <img src="images/test.png" />
+      </div>
+      <div id="silhouette">
+        <img src="images/test.png" width="100%" />
+      </div>
+    </div>
+
+   <div class="sectionspacer"></div>
+
+    <div id="kontakt">
+      <div class="container row-fluid">
+        <div class="offset1 span7">
+          <h1>Kontakt</h1>
+          <p>Schreib mir ne mail: <a href="mailto:info@baumpflege-beisswenger.de">info@baumpflege-beisswenger.de</a></p>
+        </div>
+        <div id="contact" class="offset1 span3">
+            <center><img src="images/contact.jpg" width="70%" /></center>
+        </div>
+      </div>
+    </div>
+
+    <!--<footer>
+      <p>&copy; Company 2013</p>
+    </footer>-->
+
+    <script src="javascripts/jquery-1.9.1.min.js"></script>
+    <script src="javascripts/bootstrap-transition.js"></script>
+    <script src="javascripts/bootstrap-alert.js"></script>
+    <script src="javascripts/bootstrap-modal.js"></script>
+    <script src="javascripts/bootstrap-dropdown.js"></script>
+    <script src="javascripts/bootstrap-scrollspy.js"></script>
+    <script src="javascripts/bootstrap-tab.js"></script>
+    <script src="javascripts/bootstrap-tooltip.js"></script>
+    <script src="javascripts/bootstrap-popover.js"></script>
+    <script src="javascripts/bootstrap-button.js"></script>
+    <script src="javascripts/bootstrap-collapse.js"></script>
+    <script src="javascripts/bootstrap-carousel.js"></script>
+    <script src="javascripts/bootstrap-typeahead.js"></script>
+    <script src="javascripts/jquery.scrollTo.js"></script>
+    <script src="javascripts/jquery.nav.js"></script>
+    <script src="javascripts/jquery.parallax.js"></script>
+    <script type="text/javascript">
+      //JQuery seems to have a bug in newes Firefox- an Chromium-Browsers. See: http://bugs.jquery.com/ticket/3046
+      //This is the temporary solution:
+      var height_ = jQuery.fn.height;
+      jQuery.fn.height = function() {
+          if ( this[0] == window)
+              return window.innerHeight;
+          else return height_.apply(this,arguments);
+      };
+
+      $(document).ready(function() {
+        $('#nav').onePageNav({
+          currentClass: 'active',
+          changeHash: true,
+          scrollSpeed: 1000
+        });
+        $('#logo').parallax({"coeff":0.6});
+        //$('#calendar').parallax({"coeff":-0.2});
+        //$('#location').parallax({"coeff":-0.2});
+        //$('#schlafen').parallax({"coeff":-0.2});
+        //$('#contact').parallax({"coeff":-0.2});
+      });
+    </script>
+  </body>
+</html>
